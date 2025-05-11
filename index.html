@@ -1,0 +1,322 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Xwork | The Future of Freelancing</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">Xwork</div>
+    <div class="nav-links">
+      <a href="#how">How it Works</a>
+      <a href="#features">Features</a>
+      <a href="#subscription">Pricing</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#find-freelancer" onclick="showFindFreelancer();return false;">Find a Freelancer</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div>
+      <button class="nav-cta" onclick="openModal('signup')">Sign Up</button>
+      <button class="nav-cta" onclick="openModal('login')">Login</button>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-left">
+      <div class="hero-title">A New Era of Freelancing Starts Here</div>
+      <div class="hero-desc">
+        <strong>Zero commission for 6 months. Only 5% after.</strong><br/>
+        Secure, AI-powered, ultra-fast. Xwork is the <em>easiest</em>, <em>safest</em>, and <em>most rewarding</em> way to connect top freelancers and clients.<br/>
+      </div>
+      <div class="hero-cta">
+        <button class="cta-btn" onclick="openModal('freelancer')">Join as Freelancer</button>
+        <button class="cta-btn" onclick="showFindFreelancer();">Find a Freelancer</button>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="hero-graphic"></div>
+    </div>
+  </section>
+
+  <!-- USP Cards -->
+  <div class="usps">
+    <div class="usp-card">
+      <div class="usp-icon">💸</div>
+      <div class="usp-title">No Commission for 6 Months</div>
+      <div class="usp-desc">Earn more, pay less. Only 5% after 6 months—industry’s best deal!</div>
+    </div>
+    <div class="usp-card">
+      <div class="usp-icon">🤖</div>
+      <div class="usp-title">AI-Powered Matching</div>
+      <div class="usp-desc">Get the perfect project or pro—fast. Smart, personalized suggestions.</div>
+    </div>
+    <div class="usp-card">
+      <div class="usp-icon">🔒</div>
+      <div class="usp-title">5-Layer Security</div>
+      <div class="usp-desc">Your data and payments are protected by bank-grade security, always.</div>
+    </div>
+    <div class="usp-card">
+      <div class="usp-icon">⚡</div>
+      <div class="usp-title">Instant Escrow Payouts</div>
+      <div class="usp-desc">Get paid as soon as work is approved—no long delays or holds.</div>
+    </div>
+    <div class="usp-card">
+      <div class="usp-icon">📝</div>
+      <div class="usp-title">Verified Skills & Reviews</div>
+      <div class="usp-desc">Real skill tests and ID checks. Only legit talent, only honest reviews.</div>
+    </div>
+  </div>
+
+  <!-- How it Works -->
+  <section class="how-section" id="how">
+    <div class="how-title">How Xwork Works</div>
+    <div class="how-steps">
+      <div class="how-step">
+        <div class="how-icon">📝</div>
+        <div class="how-label">Sign Up</div>
+        <div class="how-desc">Create a free client or freelancer account in seconds.</div>
+      </div>
+      <div class="how-step">
+        <div class="how-icon">📢</div>
+        <div class="how-label">Post or Find Projects</div>
+        <div class="how-desc">Clients post jobs, freelancers search or get matched instantly.</div>
+      </div>
+      <div class="how-step">
+        <div class="how-icon">💬</div>
+        <div class="how-label">Collaborate Securely</div>
+        <div class="how-desc">Chat, share files, track progress, and set milestones—all in one place.</div>
+      </div>
+      <div class="how-step">
+        <div class="how-icon">💰</div>
+        <div class="how-label">Get Paid</div>
+        <div class="how-desc">Money is held safely in escrow and released instantly when work is done.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features-section" id="features">
+    <div class="features-title">Market Gap Features & Why We're Different</div>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">💡</div>
+        <div class="feature-title">AI Talent & Project Match</div>
+        <div class="feature-desc">Advanced algorithms connect the right people, not just keywords.</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📈</div>
+        <div class="feature-title">Skill Verification</div>
+        <div class="feature-desc">Built-in tests & portfolio checks guarantee true talent.</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🏆</div>
+        <div class="feature-title">Top Talent Badges</div>
+        <div class="feature-desc">Earn badges and profile highlights by proving your skills.</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">⚙️</div>
+        <div class="feature-title">Milestones & Contracts</div>
+        <div class="feature-desc">Split projects into safe phases, with auto-generated NDAs & contracts.</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📱</div>
+        <div class="feature-title">Mobile-First Experience</div>
+        <div class="feature-desc">Work or hire from anywhere, on any device.</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">👩‍💼</div>
+        <div class="feature-title">24/7 Support Chat</div>
+        <div class="feature-desc">Real people & smart bots, always available to help you win.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Subscription Model -->
+  <section class="subscription-section" id="subscription">
+    <div class="subscription-title">Simple, Honest Pricing</div>
+    <div>Free to start. Upgrade when you want more power.</div>
+    <div class="subscription-options">
+      <div class="subscription-card">
+        <div class="sub-type">Freelancer Free</div>
+        <div class="sub-price">₹0/mo</div>
+        <div class="sub-benefits">
+          • Unlimited profile views<br>
+          • 6-month zero commission<br>
+          • Apply to 10 jobs/month<br>
+          • Basic support
+        </div>
+      </div>
+      <div class="subscription-card">
+        <div class="sub-type">Freelancer Pro</div>
+        <div class="sub-price">₹599/mo</div>
+        <div class="sub-benefits">
+          • Unlimited proposals<br>
+          • Profile highlight<br>
+          • Analytics dashboard<br>
+          • Priority support
+        </div>
+      </div>
+      <div class="subscription-card">
+        <div class="sub-type">Client Free</div>
+        <div class="sub-price">₹0/mo</div>
+        <div class="sub-benefits">
+          • Post projects free<br>
+          • 6-month zero commission<br>
+          • Basic talent search<br>
+          • Standard support
+        </div>
+      </div>
+      <div class="subscription-card">
+        <div class="sub-type">Client Plus</div>
+        <div class="sub-price">₹999/mo</div>
+        <div class="sub-benefits">
+          • Featured project slots<br>
+          • Priority matching<br>
+          • Premium support<br>
+          • Analytics
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Security Layer Section -->
+  <section class="security-section">
+    <div class="security-title">5-Layer Security to Protect Your Work & Data</div>
+    <div class="security-list">
+      <div class="security-card">
+        <div class="security-icon">🔐</div>
+        <div class="security-layer">End-to-End Encryption</div>
+        <div class="security-desc">All communication and payments are encrypted for privacy.</div>
+      </div>
+      <div class="security-card">
+        <div class="security-icon">🛡️</div>
+        <div class="security-layer">2-Factor Authentication</div>
+        <div class="security-desc">Protect your account with mobile/email verification.</div>
+      </div>
+      <div class="security-card">
+        <div class="security-icon">🏦</div>
+        <div class="security-layer">Secure Escrow System</div>
+        <div class="security-desc">Your money is held safely until the job is done.</div>
+      </div>
+      <div class="security-card">
+        <div class="security-icon">🕵️‍♂️</div>
+        <div class="security-layer">Manual & AI Monitoring</div>
+        <div class="security-desc">We fight fraud and scams with smart tech and real people.</div>
+      </div>
+      <div class="security-card">
+        <div class="security-icon">📜</div>
+        <div class="security-layer">GDPR & Data Compliance</div>
+        <div class="security-desc">Your data is handled legally, fairly, and transparently.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials & Stats -->
+  <section class="testimonials-section" id="testimonials">
+    <div class="testimonials-title">What Our Users Say</div>
+    <div class="testimonial-carousel" id="testimonial-carousel">
+      <div class="testimonial">
+        <div>
+          “Xwork helped me double my income! The zero commission is a game-changer and the client quality is amazing.”
+        </div>
+        <div class="testimonial-user">
+          <img src="https://randomuser.me/api/portraits/men/31.jpg" class="testimonial-photo" alt="User"/>
+          <div>
+            <div class="testimonial-name">Amit S.</div>
+            <div class="testimonial-role">Full Stack Developer</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial">
+        <div>
+          “I hired a designer in 2 hours and loved the instant escrow. Xwork is so much faster than Upwork or Fiverr.”
+        </div>
+        <div class="testimonial-user">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" class="testimonial-photo" alt="User"/>
+          <div>
+            <div class="testimonial-name">Priya D.</div>
+            <div class="testimonial-role">Startup Founder</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial">
+        <div>
+          “The AI matching is super accurate, and I feel much more secure here. Highly recommend to all freelancers.”
+        </div>
+        <div class="testimonial-user">
+          <img src="https://randomuser.me/api/portraits/men/65.jpg" class="testimonial-photo" alt="User"/>
+          <div>
+            <div class="testimonial-name">Rahul K.</div>
+            <div class="testimonial-role">Content Writer</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="stats-section">
+      <div class="stat-card">
+        <div class="stat-num" id="stat-projects">0</div>
+        <div class="stat-label">Projects Posted</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num" id="stat-freelancers">0</div>
+        <div class="stat-label">Freelancers Joined</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num" id="stat-earnings">₹0</div>
+        <div class="stat-label">Total Earnings</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Find a Freelancer Section -->
+  <section class="marketplace-section" id="find-freelancer" style="display:none;">
+    <div class="marketplace-title">Find a Freelancer</div>
+    <div class="marketplace-search">
+      <input type="text" id="marketplace-search-bar" placeholder="Search skills, name, or keywords..." oninput="filterFreelancers()" />
+      <select id="marketplace-skill-filter" onchange="filterFreelancers()">
+        <option value="">All Skills</option>
+        <option value="Web Development">Web Development</option>
+        <option value="Graphic Design">Graphic Design</option>
+        <option value="Content Writing">Content Writing</option>
+        <option value="UI/UX">UI/UX</option>
+        <option value="Marketing">Marketing</option>
+      </select>
+      <select id="marketplace-sort" onchange="filterFreelancers()">
+        <option value="best">Best Match</option>
+        <option value="rate">Lowest Rate</option>
+        <option value="rating">Top Rated</option>
+      </select>
+    </div>
+    <div class="marketplace-grid" id="marketplace-grid">
+      <!-- Freelancer cards will be injected by JS -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <div class="footer-links">
+      <a href="#home" class="footer-link">Home</a>
+      <a href="#how" class="footer-link">How it Works</a>
+      <a href="#features" class="footer-link">Features</a>
+      <a href="#subscription" class="footer-link">Pricing</a>
+      <a href="#testimonials" class="footer-link">Testimonials</a>
+      <a href="support@xwork.com" class="footer-link">Support</a>
+    </div>
+    <div class="footer-corp">
+      Operated by <b>LVS Private Limited Corporation</b> &copy; 2025. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- Modal for Onboarding and Dashboards -->
+  <div id="modal-bg"></div>
+  <div id="modal">
+    <div id="modal-content"></div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
